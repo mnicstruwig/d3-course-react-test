@@ -1,0 +1,16 @@
+.sketch-frame {
+  height: 300px;
+  width: 100%;
+  max-width: 200px;
+  max-height: 300px;
+  padding: 0.3rem;
+  box-sizing: border-box;
+  border-image-source: var(--frame-image);
+  border-image-slice: 20%;
+  border-image-width: 25px;
+  transition: transform 0.2s ease;
+}
+
+.sketch-frame:hover {
+    transform: translate(-4px, -4px);
+}

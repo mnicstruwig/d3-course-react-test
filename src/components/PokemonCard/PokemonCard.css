@@ -1,0 +1,16 @@
+.pokemon-card {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    /* box-sizing: border-box; */
+    /* border: 1px solid #000000;
+       border-radius: 12px; */
+}
+
+.pokemon-name {
+    display: block;
+    width: 100%;
+    height: 48px;
+    object-fit: contain;
+    margin: 1rem 0;
+}

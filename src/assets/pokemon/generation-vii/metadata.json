@@ -1,0 +1,85 @@
+{
+  "source": "https://pokeapi.co/",
+  "generationSourceUrls": [
+    "https://pokeapi.co/api/v2/generation/1/",
+    "https://pokeapi.co/api/v2/generation/2/",
+    "https://pokeapi.co/api/v2/generation/3/",
+    "https://pokeapi.co/api/v2/generation/4/",
+    "https://pokeapi.co/api/v2/generation/5/",
+    "https://pokeapi.co/api/v2/generation/6/",
+    "https://pokeapi.co/api/v2/generation/7/"
+  ],
+  "scope": "Default varieties of species introduced in Generations I–VII, using Generation VII front GIFs. Alternate forms and species without GIFs in the requested variants excluded.",
+  "stats": "HP and attack are current API base stats, not level-specific or historical game stats.",
+  "weightUnit": "kg (PokéAPI hectograms divided by 10)",
+  "spritePreference": [
+    "lets-go-pikachu-lets-go-eevee",
+    "ultra-sun-ultra-moon"
+  ],
+  "frontGifPathBase": "Paths in pokemon.json are relative to this directory. Import index.js for Vite-resolved image URLs.",
+  "consideredSpeciesCount": 809,
+  "speciesCount": 800,
+  "downloadedImageCount": 800,
+  "downloadedGifCount": 800,
+  "spriteVariantCounts": {
+    "lets-go-pikachu-lets-go-eevee": 153,
+    "ultra-sun-ultra-moon": 647
+  },
+  "excludedSpecies": [
+    {
+      "id": 212,
+      "name": "Scizor",
+      "reason": "ultra-sun-ultra-moon: source is not GIF data"
+    },
+    {
+      "id": 251,
+      "name": "Celebi",
+      "reason": "ultra-sun-ultra-moon: source is not GIF data"
+    },
+    {
+      "id": 488,
+      "name": "Cresselia",
+      "reason": "ultra-sun-ultra-moon: source is not GIF data"
+    },
+    {
+      "id": 795,
+      "name": "Pheromosa",
+      "reason": "ultra-sun-ultra-moon: source is not GIF data"
+    },
+    {
+      "id": 803,
+      "name": "Poipole",
+      "reason": "No front image in either requested variant"
+    },
+    {
+      "id": 804,
+      "name": "Naganadel",
+      "reason": "No front image in either requested variant"
+    },
+    {
+      "id": 805,
+      "name": "Stakataka",
+      "reason": "No front image in either requested variant"
+    },
+    {
+      "id": 806,
+      "name": "Blacephalon",
+      "reason": "No front image in either requested variant"
+    },
+    {
+      "id": 807,
+      "name": "Zeraora",
+      "reason": "No front image in either requested variant"
+    }
+  ],
+  "exportedScope": "Original Generation I species (National Pokédex IDs 1–151), using their existing Generation VII GIFs.",
+  "exportedSpeciesCount": 151,
+  "localDisplayImages": {
+    "format": "animated WebP",
+    "directory": "front-webp",
+    "source": "Original GIFs are kept outside Git. Source URLs and original GIF paths remain in pokemon.json for provenance.",
+    "conversion": "gifsicle --resize-fit 192x192 -O3, then gif2webp -lossy -q 60 -m 4",
+    "import": "index.js resolves WebP URLs as record.frontImage.",
+    "regenerate": "python3 scripts/convert-pokemon-webp.py --source /path/to/original-gifs"
+  }
+}
