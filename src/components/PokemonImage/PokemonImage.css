@@ -1,6 +1,8 @@
 
 .pokemon-img {
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .pokemon-img img{
